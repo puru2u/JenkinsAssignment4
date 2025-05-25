@@ -1,13 +1,5 @@
 pipeline {
     agent any
-    tools {
-            maven 'Maven3'   // Name from Global Tool Configuration
-            jdk 'JDK17'      // Name from Global Tool Configuration
-        }
-
-        environment {
-            MAVEN_OPTS = "-Xmx1024m"
-        }
     stages {
             stage('Checkout') {
                 steps {
