@@ -28,6 +28,5 @@ pipeline {
            failure {
                echo "Build or execution failed."
            }
-       }
     }
 }
