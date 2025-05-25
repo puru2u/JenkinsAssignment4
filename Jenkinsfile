@@ -13,11 +13,22 @@ pipeline {
                 }
             }
 
-            stage('Run Application') {
+            stage('Run Application HelloWorld') {
                 steps {
                     sh 'mvn exec:java -Dexec.mainClass="com.wipro.topgear.HelloWorld"'
                 }
             }
+            stage('Run Application HelloWipro') {
+                 steps {
+                    sh 'mvn exec:java -Dexec.mainClass="com.wipro.topgear.HelloWipro"'
+                 }
+            }
+             stage('Run Application HelloJenkins') {
+                 steps {
+                    sh 'mvn exec:java -Dexec.mainClass="com.wipro.topgear.HelloJenkins"'
+                 }
+             }
+
     }
 
 
